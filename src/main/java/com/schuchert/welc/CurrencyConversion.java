@@ -65,7 +65,7 @@ public class CurrencyConversion {
       return symbolToName;
    }
 
-   public static BigDecimal convertFromTo(String fromCurrency,
+   public static BigDecimal getConversionRate(String fromCurrency,
          String toCurrency) {
       Map<String, String> symbolToName = currencySymbols();
       if (!symbolToName.containsKey(fromCurrency))
