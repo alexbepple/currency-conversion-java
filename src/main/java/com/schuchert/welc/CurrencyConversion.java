@@ -19,7 +19,7 @@ public class CurrencyConversion {
    static Map<String, String> allCurrenciesCache;
    static long lastCacheRead = Long.MAX_VALUE;
 
-   private static Map<String, String> currencySymbols() {
+   public static Map<String, String> currencySymbols() {
       if (allCurrenciesCache != null
             && System.currentTimeMillis() - lastCacheRead < 5 * 60 * 1000) {
          return allCurrenciesCache;
