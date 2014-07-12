@@ -10,6 +10,10 @@ The original code is the one that Brett Schuchert has used in talks about workin
 # Git branches
 
 * `master` The legacy code we start out with.
+* `golden_master` Now we have an integration test and a pseudo-unit test that uses black magic from JMockit.
+* `solution` is not complete, but a significant step forward.
+    * Class for currency symbols extracted.
+    * Extracted caching to decorator pattern using TDD.
 
 
 # Working with the code
