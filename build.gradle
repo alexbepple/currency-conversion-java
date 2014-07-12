@@ -11,6 +11,8 @@ repositories {
 
 dependencies {
     compile 'org.apache.httpcomponents:httpclient:4.2.1'
+    // JMockit must come before JUnit
+    testCompile 'com.googlecode.jmockit:jmockit:1.0'
     testCompile 'junit:junit:4.11'
     testCompile 'org.hamcrest:hamcrest-all:1.3'
 }
