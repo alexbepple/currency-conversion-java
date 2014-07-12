@@ -1,0 +1,22 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+
+defaultTasks 'check'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.apache.httpcomponents:httpclient:4.2.1'
+    testCompile 'junit:junit:4.11'
+}
+
+eclipse.jdt {
+    sourceCompatibility = 1.7
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.0'
+}

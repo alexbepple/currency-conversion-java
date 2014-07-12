@@ -1,2 +1,14 @@
+# Eclipse
+.classpath
+.project
+.settings/
 bin/
-lib/
+
+# Gradle
+build/
+.gradle/
+
+# Idea
+*.iml
+*.ipr
+*.iws
