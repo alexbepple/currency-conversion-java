@@ -27,6 +27,7 @@ configurations.all {
     }
 }
 
+tasks.eclipse.dependsOn(cleanEclipse)
 eclipse.jdt {
     sourceCompatibility = 1.7
 }
