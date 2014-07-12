@@ -97,8 +97,8 @@ public class CurrencyConversion {
          int start = theWholeThing
                .lastIndexOf("<div id=\"converter_results\"><ul><li>");
          String substring = result.substring(start);
-         int startOfInterestingStuff = substring.indexOf("<b>") + 3;
-         int endOfIntererestingStuff = substring.indexOf("</b>",
+         int startOfInterestingStuff = substring.indexOf("<strong>") + 3;
+         int endOfIntererestingStuff = substring.indexOf("</strong>",
                startOfInterestingStuff);
          String interestingStuff = substring.substring(
                startOfInterestingStuff, endOfIntererestingStuff);
